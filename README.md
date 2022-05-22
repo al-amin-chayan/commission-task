@@ -1,11 +1,4 @@
-# Paysera Commission task skeleton
+# Commission Task
+A company allows private and business clients to deposit and withdraw funds to and from company accounts in multiple currencies. Clients may be charged a commission fee.
 
-Following steps:
-- don't forget to change `Paysera` namespace and package name in `composer.json`
- to your own, as `Paysera` keyword should not be used anywhere in your task;
-- `\Paysera\CommissionTask\Service\Math` is an example class provided for the skeleton and could or could not be used by your preference;
-- needed scripts could be found inside `composer.json`;
-- before submitting the task make sure that all the scripts pass (`composer run test` in particular);
-- this file should be updated before submitting the task with the documentation on how to run your program.
-
-Good luck! :) 
+We have to create an application that handles operations provided in CSV format and calculates a commission fee based on defined rules.

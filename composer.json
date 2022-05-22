@@ -1,16 +1,16 @@
 {
     "name": "alamin-chayan/commission-task",
-    "description": "Skeleton for Paysera recruitment task",
+    "description": "Application that handles operations provided in CSV format and calculates a commission fee based on defined rules",
     "keywords": [],
     "type": "project",
     "autoload": {
         "psr-4": {
-            "Paysera\\CommissionTask\\": "src"
+            "App\\CommissionTask\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Paysera\\CommissionTask\\Tests\\": "tests"
+            "App\\CommissionTask\\Tests\\": "tests"
         }
     },
     "require": {
