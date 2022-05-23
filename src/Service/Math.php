@@ -2,19 +2,17 @@
 
 declare(strict_types=1);
 
-namespace App\CommissionTask\Service;
+namespace App\Service;
 
 class Math
 {
-    private $scale;
-
-    public function __construct(int $scale)
+    /**
+     * Round float value up supporting decimal precision.
+     */
+    public static function ceil(float $value, int $precision = 2): float
     {
-        $this->scale = $scale;
-    }
+        $pow = pow(10, $precision);
 
-    public function add(string $leftOperand, string $rightOperand): string
-    {
-        return bcadd($leftOperand, $rightOperand, $this->scale);
+        return (ceil($pow * $value) + ceil($pow * $value - ceil($pow * $value))) / $pow;
     }
 }
