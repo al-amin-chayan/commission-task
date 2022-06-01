@@ -33,6 +33,9 @@ If you do not have php 8.1 image available in your machine, you can install it v
 ```
 ### Available Commands
 ```
+// Run script
+- php script.php input.csv
+
 // Run testcases
 - composer run phpunit
 
