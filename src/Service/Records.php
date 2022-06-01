@@ -8,7 +8,6 @@ use DateTime;
 
 class Records
 {
-
     private static $instances = [];
 
     private array $transactions = [];

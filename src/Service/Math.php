@@ -8,6 +8,8 @@ class Math
 {
     /**
      * Round float value up supporting decimal precision.
+     *
+     * @param float$value
      */
     public static function ceil(float $value, int $precision = 2): float
     {

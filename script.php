@@ -32,10 +32,10 @@ foreach ($operations as $operation) {
 
     $transaction = new \App\Service\Transaction(
         $account,
-        $operation[DATE_INDEX],
         $operation[TRANSACTION_TYPE_INDEX],
         $operation[AMOUNT_INDEX],
-        $operation[CURRENCY_INDEX]
+        $operation[CURRENCY_INDEX],
+        $operation[DATE_INDEX]
     );
 
     echo number_format($records->add($transaction), 2, '.', '') . PHP_EOL;

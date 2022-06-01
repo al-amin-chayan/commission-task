@@ -12,19 +12,17 @@ class Transaction
     public const WITHDRAW = 'withdraw';
     public const DEPOSIT = 'deposit';
 
-    private Account $account;
     protected DateTime $date;
-    protected string $type;
-    protected float $amount;
-    protected string $currency;
 
-    public function __construct(Account $account, string $date, string $type, float $amount, string $currency)
+    public function __construct(
+        protected Account $account,
+        protected string $type,
+        protected float $amount,
+        protected string $currency,
+        string $date
+    )
     {
-        $this->account = $account;
         $this->date = new DateTime($date);
-        $this->type = $type;
-        $this->amount = $amount;
-        $this->currency = $currency;
     }
 
     public function date()

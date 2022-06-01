@@ -11,11 +11,9 @@ abstract class Account
 {
     public const DEPOSIT_CHARGE_PERCENTAGE = 0.03;
 
-    protected int $id;
-
-    public function __construct(int $id)
+    public function __construct(protected int $id)
     {
-        $this->id = $id;
+
     }
 
     public function id()
