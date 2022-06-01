@@ -20,8 +20,7 @@ class Transaction
         protected float $amount,
         protected string $currency,
         string $date
-    )
-    {
+    ) {
         $this->date = new DateTime($date);
     }
 

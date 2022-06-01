@@ -10,10 +10,32 @@ Run the following commands in composer:
 
 ```
 - git clone git@github.com:alamin-chayan/commission-task.git
-
+- cd commission-task
 - composer install
 ```
 
+## Install using Docker
+
+If you do not have php 8.1 image available in your machine, you can install it viz docker
+
 ```
+// Clone Project
+- git clone git@github.com:alamin-chayan/commission-task.git
+- cd commission-task
+
+// Build Docker Image
+- docker-compose build
+- docker-compose up -d
+- docker-compose exec php /bin/bash
+
+// Install Composer Dependecies
+- composer install
+```
+### Available Commands
+```
+// Run testcases
+- composer run phpunit
+
+// Fix CS
 - composer run fix-cs
 ```

@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  php:
+    container_name: TASK
+    build:
+      context: ./docker/php
+    ports:
+      - "8014:80"
+    volumes:
+      - ./:/app
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "200k"
+        max-file: "3"
+      

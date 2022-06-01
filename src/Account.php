@@ -13,7 +13,6 @@ abstract class Account
 
     public function __construct(protected int $id)
     {
-
     }
 
     public function id()
